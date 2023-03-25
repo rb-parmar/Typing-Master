@@ -11,7 +11,14 @@ const score = document.querySelector('.score');
 // Creating new Audio Object 
 const bgMusic = new Audio('./Assets/Audio/tick-tock-21075.mp3');
 bgMusic.type = 'Audio/mp3';
-bgMusic.volume = 0.5;
+bgMusic.volume = 0.4;
+
+const winWord = new Audio('./Assets/Audio/winpoint.mp3');
+winWord.type = 'Audio/mp3';
+winWord.volume = 0.4; 
+
+const gameOver = new Audio('./Assets/Audio/game-over.mp3');
+gameOver.type = 'Audio/mp3';
 
 // Array of words to write from
 const words = [
@@ -73,6 +80,7 @@ function randomWord() {
 function checkWord() {
   if(displayWord.innerText === input.value) {
     hits++;
+    winWord.play();
     percentage = ((hits / 90) * 100).toFixed(2);
     displayWord.innerText = '';
     input.value = '';
@@ -100,6 +108,7 @@ startButton.addEventListener('click', function() {
 // checking when to stop the game
 stop = setInterval(function() {
   if(countdown === 0) {
+    gameOver.play();
     bgMusic.pause();
     clearInterval(stop);
     clearInterval(countTime);
