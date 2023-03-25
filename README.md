@@ -1,3 +1,3 @@
 ## Typing Master
 
-Click [here]() to try out my 'Typing Master' game.
+Click [here](https://rb-parmar.github.io/Typing-Master/) to try out my 'Typing Master' game.
