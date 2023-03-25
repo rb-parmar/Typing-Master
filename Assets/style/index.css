@@ -1,0 +1,117 @@
+@import url(./reset.css);
+
+
+/*-------------------------------------------*/
+
+body {
+  background-image: linear-gradient(to bottom right, #12CE74, #2363C9, #841DCA);
+  display: grid;
+  place-items: center;
+}
+
+.enclosure {
+  height: 700px;
+  width: 800px;
+  border-radius: 7px;
+  margin-top: -100px;
+  align-items: center;
+}
+
+h1 {
+  text-decoration: overline underline #000;
+  font-size: 50px;
+  color: #fff;
+}
+
+.displayWord {
+  margin: auto;
+  height: 60px;
+  width: 300px;
+  background-image: linear-gradient(to bottom right, #202524, #413f3f);
+  border: ridge #202524 2px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.count {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  border: solid #202524 1px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-color: #ffa500;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+  font-weight: 700;
+
+}
+
+.input {
+  margin: auto;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  border: ridge #202524 2px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+::placeholder {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.startButton {
+  text-align: center;
+  height: 30px;
+  width: 100px;
+  border-radius: 12px;
+  background-color: #202524;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.playAgain {
+  margin: auto;
+  text-align: center;
+  height: 30px;
+  width: 120px;
+  border-radius: 12px;
+  background-color: #202524;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  display: none;
+}
+
+.score {
+  margin: auto;
+  height: 160px;
+  width: 500px;
+  background-color: #202524;
+  border: ridge #202524 2px;
+  border-radius: 7px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  display: none;
+}
