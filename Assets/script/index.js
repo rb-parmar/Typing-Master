@@ -9,7 +9,7 @@ const playAgain = document.querySelector('.playAgain');
 const score = document.querySelector('.score');
 
 // Creating new Audio Object 
-const bgMusic = new Audio('./Assets/Audio/tick-tock-21075.mp3');
+const bgMusic = new Audio('https://github.com/rb-parmar/Typing-Master/blob/main/Assets/Audio/tick-tock-21075.mp3');
 bgMusic.type = 'Audio/mp3';
 bgMusic.volume = 0.5;
 
