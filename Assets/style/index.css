@@ -4,31 +4,33 @@
 /*-------------------------------------------*/
 
 body {
-  background-image: linear-gradient(to bottom right, #12CE74, #2363C9, #841DCA);
+  background-image: linear-gradient(to bottom, #2363C9, #841DCA);
   display: grid;
   place-items: center;
 }
 
 .enclosure {
-  height: 700px;
-  width: 800px;
+  background-color: rgb(0 0 0 / 0.2);
+  height: 500px;
+  width: 400px;
   border-radius: 7px;
-  margin-top: -100px;
   align-items: center;
+  box-shadow: 2px 2px 4px #6d6b6b5e;
 }
 
 h1 {
-  text-decoration: overline underline #000;
-  font-size: 50px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: #000;
+  font-size: 44px;
   color: #fff;
+  font-family: orbitron;
 }
 
 .displayWord {
   margin: auto;
   height: 60px;
   width: 300px;
-  background-image: linear-gradient(to bottom right, #202524, #413f3f);
-  border: ridge #202524 2px;
   border-radius: 7px;
   margin-bottom: 20px;
   font-size: 36px;
@@ -37,21 +39,33 @@ h1 {
   color: #fff;
   font-weight: 700;
   margin-top: 50px;
+  box-shadow: 1px 1px 2px #8d8c8c;
+  background-image: linear-gradient(to bottom, #841DCA, #2363c9);
 }
 
 .count {
   margin: auto;
   height: 100px;
   width: 100px;
-  border: solid #202524 1px;
+  border: solid #2025247a 1px;
   border-radius: 50%;
   margin-bottom: 20px;
-  background-color: #ffa500;
+  background-image: linear-gradient(to bottom, #2363c9, #841DCA);
   text-align: center;
   line-height: 100px;
   font-size: 30px;
   font-weight: 700;
+  color: #fff;
+}
 
+.hits {
+  margin-inline: auto;
+  height: 30px;
+  width: 150px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
 }
 
 .input {
@@ -59,10 +73,10 @@ h1 {
   text-align: center;
   width: 200px;
   height: 40px;
-  border: ridge #202524 2px;
+  border: ridge #7e8b89 2px;
   border-radius: 7px;
   margin-bottom: 20px;
-  margin-left: 300px;
+  margin-left: 100px;
   font-size: 22px;
   line-height: 40px;
 }
@@ -107,11 +121,47 @@ h1 {
   background-color: #202524;
   border: ridge #202524 2px;
   border-radius: 7px;
-  margin-top: 20px;
+  margin-top: 5px;
   text-align: center;
   line-height: 50px;
   font-size: 30px;
   font-weight: 600;
   color: #fff;
   display: none;
+}
+
+.scoreboard {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100vh;
+  width: 300px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  background-color: rgb(0 0 0 / 0.3);
+  transition: all 1s ease-in-out;
+}
+
+.scoreboard.active {
+  right: 0px;
+}
+
+
+.scoreboard h3 {
+  font-family: orbitron;
+}
+
+.scoreboard div {
+  margin: 10px 0;
+}
+
+.score-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score-flex div {
+  height: 20px;
+  width: 50px;
 }
