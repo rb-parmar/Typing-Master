@@ -120,8 +120,6 @@ function scoreBoardDiv(toString) {
 }
 
 
-
-
 // start button
 startButton.addEventListener('click', function() {
   input.focus();
